@@ -1,0 +1,9 @@
+services:
+  deno:
+    build:
+      context: .
+      dockerfile: docker/deno/Dockerfile
+    tty: true
+    command: sleep infinity
+    volumes:
+      - .:/app

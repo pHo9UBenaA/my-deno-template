@@ -3,7 +3,9 @@
     "dev": "echo \"deno run --watch main.ts\"",
     "format": "deno fmt",
     "lint": "deno lint",
-    "executer": "deno --no-lock -A"
+    "check": "deno check .",
+    "executer": "deno --no-lock -A",
+    "up:latest": "deno outdated --update --latest"
   },
   "imports": {},
   "compilerOptions": {

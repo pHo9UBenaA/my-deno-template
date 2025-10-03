@@ -1,4 +1,5 @@
 {
+  "$schema": "https://github.com/denoland/deno/blob/main/cli/schemas/config-file.v1.json",
   "tasks": {
     "dev": "echo \"deno run --watch main.ts\"",
     "format": "deno fmt",
@@ -12,5 +13,11 @@
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "jsx": "react-jsx",
     "strict": true
+  },
+  "lock": {
+    "frozen": true
+  },
+  "publish": {
+    "include": ["dist/", "README.md", "deno.json"]
   }
 }
